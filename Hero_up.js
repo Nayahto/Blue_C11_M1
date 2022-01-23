@@ -1,4 +1,4 @@
-/* instalar o "prompt-sync" para poder usar os prompt em outras máquinas*/
+/* instalar o "prompt-sync" para poder usar o prompt em outras máquinas*/
 
 let cont_sim = 0;
 alert(`Depois de uma árdua joranda com desafios variaveis e constantes nosso heroi o "javio scrick" se depara com o seu maior inimigo e que talvez ele nao tenha "condições" pata derrota-lo mas para descobrir qual sera o final dessa jornada acompanhe o javio e ajude-o a chegar no seu em seu objetivo final o grande Olímpio, o Olímpio "formacio-blue" na iha de web`)
