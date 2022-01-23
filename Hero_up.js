@@ -1,3 +1,5 @@
+/* instalar o "prompt-sync" para poder usar os prompt em outras máquinas*/
+
 let cont_sim = 0;
 alert(`Depois de uma árdua joranda com desafios variaveis e constantes nosso heroi o "javio scrick" se depara com o seu maior inimigo e que talvez ele nao tenha "condições" pata derrota-lo mas para descobrir qual sera o final dessa jornada acompanhe o javio e ajude-o a chegar no seu em seu objetivo final o grande Olímpio, o Olímpio "formacio-blue" na iha de web`)
 let javio = prompt (`javio acaba de chegar em um novo nivel na sua jornada até o formacio-full deseja continuar ?`)
@@ -51,7 +53,7 @@ if (javio4 == "nao"){
   alert (`javio viu que era capaz de conseguir mas preferou retornar para sua vida anterior onde tudo é mais tranquilo`)
 }else if (javio4 == `sim`)
 {
-  alert (`javio consegue finalmente dominar os feitiços e se tornar um junior nos feitiços porém ele sabe que caso ser reclamante grnade ele precisa aprender muito mais`)
+  alert (`javio consegue finalmente dominar os feitiços e se tornar um junior porém ele sabe que para ser realmante grande ele precisa aprender muito mais`)
   cont_sim ++
   }else{}
   if (cont_sim == 0 )
@@ -72,5 +74,5 @@ if (javio4 == "nao"){
   }
   if (cont_sim == 5)
   {
-    console.log(`parabens heroi! javio consegiu compeltar sua missão com louvor e agora pode finalmente terminar a primeira parte da sua jornada `)
+    console.log(`parabens heroi! javio consegiu completar sua missão com louvor e agora pode finalmente terminar a primeira parte da sua jornada `)
   }
