@@ -1,3 +1,5 @@
+// instalar o prompt-syn no node!!//
+
 let cont = +prompt (`diga quantas rodadas voce quer jogar`)
 let selec_item
 let a = Math.floor(Math.random(0,3)*3);
@@ -8,7 +10,11 @@ let play = 0;
 let cons
 let cons1
 while(cont > 0)
-{   
+{    console.log(`opcoes de escolha`)
+      for (let i = 0; i < vet.length; i ++)
+{
+      console.log(vet[i])
+}
       selec_item = prompt (`faca uma escolha entre pedra, papel ou tesoura`)
     if (d == `pedra` && selec_item == `pedra`){
           console.log(`seu oponente escolheu: ${d}\n você escolheu ${selec_item}\n resultado: empate`)
