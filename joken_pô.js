@@ -1,4 +1,4 @@
-// instalar o prompt-syn no node!!//
+// instalar o prompt-sync no node! //
 
 let cont = +prompt (`diga quantas rodadas voce quer jogar`)
 let selec_item
