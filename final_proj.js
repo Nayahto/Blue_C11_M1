@@ -1,6 +1,8 @@
 /*obs, o status permanecera ao longo de todo o jogo*/
 // instruções //
 console.log(`o jogo vai funcionar da seguinte maneira: o jogador tera algumas tarefas para executar ao longo de 3 horas diarias.\n cada tarefa nao cumprida acarretará na perda de alguns pontos de vida e no aumento do estresse`)
+console.log(``)
+console.log(`suas escolhas sao: tarefa 1: alimentar o doginho tarefa 2: limpar a casa tarefa 3: jogar o lixo tarefa 4: fazer tarefas escolares`)
 console.log(`voce acabou de acordar e ja sao 16 da tarde. vc tem mais 3 horas ate a hora da aula`)
 
 // variaveis//
