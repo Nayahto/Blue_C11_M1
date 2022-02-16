@@ -168,6 +168,7 @@ while(tempo.dia < 5 )
            }else 
            {
              console.log(`seu estresse esta bem baixo pelo que eu vi voce esta se saindo bem`)
+             console.log(`status: \n vida: ${jogador.vida}\n estresse: ${jogador.nivel_estresse}`)
            }
          }
        }
