@@ -1,7 +1,7 @@
 /*obs, o status permanecera ao longo de todo o jogo*/
 // instruções //
-/*console.log(`o jogo vai funcionar da seguinte maneira: o jogador tera algumas tarefas para executar ao longo de 3 horas diarias.\n cada tarefa nao cumprida acarretará na perda de alguns pontos de vida e no aumento do estresse`)
-console.log(`voce acabou de acordar e ja sao 16 da tarde. vc tem mais 3 horas ate a hora da aula`)*/
+console.log(`o jogo vai funcionar da seguinte maneira: o jogador tera algumas tarefas para executar ao longo de 3 horas diarias.\n cada tarefa nao cumprida acarretará na perda de alguns pontos de vida e no aumento do estresse`)
+console.log(`voce acabou de acordar e ja sao 16 da tarde. vc tem mais 3 horas ate a hora da aula`)
 
 // variaveis//
 let jogador = 
@@ -129,9 +129,9 @@ function consequencias (a,b,c,d)
  }
  }
 
-while(tempo.dia < 2 )
+while(tempo.dia < 5 )
 {
-     let escolha = +prompt (`faça sua escolha de tarefa 1: alimenta o doginho. 2: limpa a casa . 3: coloca o lixo pra fora. 4: faz as tarefas escolares`)
+     let escolha = +prompt (`faça sua escolha`)
      let tarefas = [undefined, `o doginho foi alimentado`, `a casa foi limpa`, `o lixo foi jogado`, `a tarefa escolar foi feita`]
      tarefas = tarefas[escolha]
      tempo.horas++
@@ -149,9 +149,7 @@ while(tempo.dia < 2 )
         taref3 = 0
         taref4 = 0
        }
-       if(console.log(jogador.nivel_estresse))
-       console.log(jogador.nivel_estresse)
-       if(tempo.dia == 2)
+       if(tempo.dia == 5)
        {
          if(jogador.nivel_estresse >= 20 && jogador.nivel_estresse <= 50)
          {
