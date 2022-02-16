@@ -1,8 +1,6 @@
-/*obs, o status permanecera ao longo de todo o jogo*/
 // instruções //
 console.log(`o jogo vai funcionar da seguinte maneira: o jogador tera algumas tarefas para executar ao longo de 3 horas diarias.\n cada tarefa nao cumprida acarretará na perda de alguns pontos de vida e no aumento do estresse`)
-console.log(``)
-console.log(`suas escolhas sao: tarefa 1: alimentar o doginho tarefa 2: limpar a casa tarefa 3: jogar o lixo tarefa 4: fazer tarefas escolares`)
+console.log()
 console.log(`voce acabou de acordar e ja sao 16 da tarde. vc tem mais 3 horas ate a hora da aula`)
 
 // variaveis//
@@ -16,11 +14,20 @@ let tempo =
   horas: 16,
   dia: 0
 }
+let tarefas = [undefined, `o doginho foi alimentado`, `a casa foi limpa`, `o lixo foi jogado`, `a tarefa escolar foi feita`]
+
   let taref1 = 0
   let taref2 = 0
   let taref3 = 0
   let taref4 = 0
 // funcoes, lacos e condicionais //
+console.log(`suas escolhas sao: tarefa 1: alimentar o doginho tarefa 2: limpar a casa tarefa 3: jogar o lixo tarefa 4: fazer tarefas escolares e esses são os possiveis resultados`)
+console.log()
+
+for(let i = 1; i < tarefas.length; ++ i)
+{
+  console.log(`: ${tarefas[i]} `)
+}
 function tarefas_nao_feitas(a, b)
 {
    if(a > 0 && a <= 4)
@@ -63,27 +70,22 @@ function repete_tarefa (a)
   }
   if (taref2 > 1)
   {
-    if(jogador.nivel_estresse < 94)
+    if(jogador.nivel_estresse <= 94)
     {
       jogador.nivel_estresse += 6
     }
     console.log(`voce limpou a casa duas vezes parabéns pela higiene, mas voce ficou um pouco estressado pois poderia ter feito algo ainda mais produtivo`)
   }
-  if (taref3 > 1)
+  if(taref3 > 1)
   {
-    if(taref2 < 1 && taref3 > 1)
-    {
       if(jogador.nivel_estresse <= 90)
       {
         jogador.nivel_estresse +=10
       }
-      console.log(`voce tentou jogar o lixo de novo e ainda nem limpou a casa`)
-    }else
-    {
+    }
       console.log(`voce jogou o lixo duas vezes `)
     }
     
-  }
   if (taref4 > 1)
   {
     console.log(`essa tarefa ja foi feita`)
@@ -133,8 +135,9 @@ function consequencias (a,b,c,d)
 
 while(tempo.dia < 5 )
 {
+  console.log()
      let escolha = +prompt (`faça sua escolha`)
-     let tarefas = [undefined, `o doginho foi alimentado`, `a casa foi limpa`, `o lixo foi jogado`, `a tarefa escolar foi feita`]
+     tarefas = [undefined, `o doginho foi alimentado`, `a casa foi limpa`, `o lixo foi jogado`, `a tarefa escolar foi feita`]
      tarefas = tarefas[escolha]
      tempo.horas++
      console.log(`sao ${tempo.horas} horas`)
