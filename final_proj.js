@@ -63,7 +63,7 @@ function repete_tarefa (a)
   }
   if (taref2 > 1)
   {
-    if(jogaddor.nivel_estresse < 94)
+    if(jogador.nivel_estresse < 94)
     {
       jogador.nivel_estresse += 6
     }
@@ -89,7 +89,7 @@ function repete_tarefa (a)
     console.log(`essa tarefa ja foi feita`)
     if(jogador.nivel_estresse >= 5)
     {
-      jogaddor.nivel_estresse -= 5
+      jogador.nivel_estresse -= 5
     }
     console.log(`porem estudar é sempre bom então voce ficou mais tranquilo`)
   }
