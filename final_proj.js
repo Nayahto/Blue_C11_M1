@@ -7,8 +7,7 @@ console.log(`voce acabou de acordar e ja sao 16 da tarde. vc tem mais 3 horas at
 let jogador = 
 {
   nivel_estresse: 0,
-  vida: 100,
-  nota: 0
+  vida: 100
 }
 let tempo = 
 {
@@ -70,7 +69,7 @@ function repete_tarefa (a)
   }
   if (taref3 > 1)
   {
-    if(taref2 <= 1 && taref3 > 1)
+    if(taref2 < 1 && taref3 > 1)
     {
       if(jogador.nivel_estresse <= 90)
       {
@@ -130,7 +129,7 @@ function consequencias (a,b,c,d)
  }
  }
 
-while(tempo.dia < 1 )
+while(tempo.dia < 2 )
 {
      let escolha = +prompt (`faça sua escolha de tarefa 1: alimenta o doginho. 2: limpa a casa . 3: coloca o lixo pra fora. 4: faz as tarefas escolares`)
      let tarefas = [undefined, `o doginho foi alimentado`, `a casa foi limpa`, `o lixo foi jogado`, `a tarefa escolar foi feita`]
@@ -149,7 +148,25 @@ while(tempo.dia < 1 )
         taref2 = 0
         taref3 = 0
         taref4 = 0
-        console.log(jogador.nivel_estresse)
+       }
+       if(console.log(jogador.nivel_estresse))
+       console.log(jogador.nivel_estresse)
+       if(tempo.dia = 5)
+       {
+         if(jogador.nivel_estresse >= 20 && <= 50)
+         {
+             jogador.vida -= jogador.nivel_estresse
+           console.log(`sua semana foi ,um pouco dificil mas voce cosneguiu se sasir bem`)
+           console.log(`status: \n vida: ${jogador.vida}\n estresse: ${jogador.nivel_estresse}`)}
+           else if(jogador.nivel_estresse >= 51 && jogador.nivel_estresse <= 100){
+             jogador.vida -= jogador.nivel_estresse
+             console.log(`sua semana foi muito dificil meu guerreiro, entao descanse bastante para a proxima semana.`)
+             console.log(`status: \n vida: ${jogador.vida}\n estresse: ${jogador.nivel_estresse}`)
+           }else 
+           {
+             console.log(`seu estresse esta bem baixo pelo que eu vi voce esta se saindo bem`)
+           }
+         }
        }
 }
 
