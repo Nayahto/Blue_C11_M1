@@ -133,7 +133,7 @@ function consequencias (a,b,c,d)
  }
  }
 
-while(tempo.dia < 2 )
+while(tempo.dia < 5 )
 {
   console.log()
      let escolha = +prompt (`faça sua escolha`)
@@ -154,7 +154,7 @@ while(tempo.dia < 2 )
         taref3 = 0
         taref4 = 0
        }
-       if(tempo.dia == 2)
+       if(tempo.dia == 5)
        {
          if(jogador.nivel_estresse >= 20 && jogador.nivel_estresse <= 50)
          {
