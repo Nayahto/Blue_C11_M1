@@ -80,22 +80,22 @@ function repete_tarefa (a)
   {
       if(jogador.nivel_estresse <= 90)
       {
-        jogador.nivel_estresse +=10
+        jogador.nivel_estresse += 10
       }
-    }
+    
       console.log(`voce jogou o lixo duas vezes `)
-    }
+  }
     
   if (taref4 > 1)
   {
     console.log(`essa tarefa ja foi feita`)
-    if(jogador.nivel_estresse >= 5)
+    if(jogador.nivel_estresse <= 95)
     {
-      jogador.nivel_estresse -= 5
+      jogador.nivel_estresse += 5
     }
     console.log(`porem estudar é sempre bom então voce ficou mais tranquilo`)
   }
-}
+  }
 function consequencias (a,b,c,d)
 {
  if(a == 1 && b == 1 && c == 1) 
@@ -133,7 +133,7 @@ function consequencias (a,b,c,d)
  }
  }
 
-while(tempo.dia < 5 )
+while(tempo.dia < 2 )
 {
   console.log()
      let escolha = +prompt (`faça sua escolha`)
@@ -154,7 +154,7 @@ while(tempo.dia < 5 )
         taref3 = 0
         taref4 = 0
        }
-       if(tempo.dia == 5)
+       if(tempo.dia == 2)
        {
          if(jogador.nivel_estresse >= 20 && jogador.nivel_estresse <= 50)
          {
@@ -165,11 +165,12 @@ while(tempo.dia < 5 )
              jogador.vida -= jogador.nivel_estresse
              console.log(`sua semana foi muito dificil meu guerreiro, entao descanse bastante para a proxima semana.`)
              console.log(`status: \n vida: ${jogador.vida}\n estresse: ${jogador.nivel_estresse}`)
-           }else 
+           }else if(jogador.nivel_estresse <= 20)
            {
+             jogador.vida -= jogador.nivel_estresse
              console.log(`seu estresse esta bem baixo pelo que eu vi voce esta se saindo bem`)
              console.log(`status: \n vida: ${jogador.vida}\n estresse: ${jogador.nivel_estresse}`)
-           }
+           }else{}
          }
        }
 
