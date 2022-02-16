@@ -151,12 +151,12 @@ while(tempo.dia < 2 )
        }
        if(console.log(jogador.nivel_estresse))
        console.log(jogador.nivel_estresse)
-       if(tempo.dia = 5)
+       if(tempo.dia == 2)
        {
-         if(jogador.nivel_estresse >= 20 && <= 50)
+         if(jogador.nivel_estresse >= 20 && jogador.nivel_estresse <= 50)
          {
              jogador.vida -= jogador.nivel_estresse
-           console.log(`sua semana foi ,um pouco dificil mas voce cosneguiu se sasir bem`)
+           console.log(`sua semana foi um pouco dificil mas voce conseguiu se sair bem`)
            console.log(`status: \n vida: ${jogador.vida}\n estresse: ${jogador.nivel_estresse}`)}
            else if(jogador.nivel_estresse >= 51 && jogador.nivel_estresse <= 100){
              jogador.vida -= jogador.nivel_estresse
@@ -168,6 +168,5 @@ while(tempo.dia < 2 )
            }
          }
        }
-}
 
 // testes //
